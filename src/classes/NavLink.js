@@ -18,7 +18,7 @@ class NavLink extends CRUD {
     generateHtml() {
         return `
             <span 
-                class=${this.isActive ? NavLink.NAV_LINK_ACTIVE_CLASS : NavLink.NAV_LINK_CLASS}
+                class="${this.isActive ? `${NavLink.NAV_LINK_CLASS} ${NavLink.NAV_LINK_ACTIVE_CLASS}` : NavLink.NAV_LINK_CLASS}"
                 data-album="${this.id}"
                 data-active="${this.isActive}"
             >
