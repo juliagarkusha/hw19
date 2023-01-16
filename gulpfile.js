@@ -29,7 +29,7 @@ async function js() {
     './src/classes/*.js',
     './src/index.js',
   ])
-    .pipe(concat('script.js'))
+    .pipe(concat('index.min.js'))
     .pipe(uglify())
     .pipe(dest('./dist'))
 }
