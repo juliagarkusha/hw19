@@ -9,3 +9,6 @@ const gallery = new Gallery({
 });
 
 gallery.render();
+
+console.log('debug 111: ', 111);
+
