@@ -28,8 +28,16 @@ h1{
     padding: 8px;
 }
 
-.navLink:hover {
-    cursor: pointer;
+.navLink {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+input {
+    ::placeholder {
+        color: #262626;
+    }
 }
 
 .navLink--active {
